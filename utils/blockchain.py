@@ -21,7 +21,7 @@ def pay_money(amt: int):
     with open(contract_file_path) as f:
         contract_data = json.load(f)
         abi = contract_data['abi']
-        contract_address = "0xCa923398ad90e6a02fa3aC47D22A32Fd0c71966e"  # Contract address
+        contract_address = "0x9f04F76CB09A6aDc2c1765e0e19248e45397044f"  # Contract address
 
     # Create contract instance
     contract = web3.eth.contract(address=contract_address, abi=abi)
